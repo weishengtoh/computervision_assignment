@@ -256,10 +256,7 @@ def save_image(frame, results, unique_vehicles, images_folder):
         img = frame[min_y:max_y, min_x:max_x]
         filepath = os.path.join(pic_folder, f'{label}_{id}.png')
         print(f'{id}.png')
-        success = cv2.imwrite(filepath, img)
-
-        if success:
-            logger.info(f'Successfully saved image {id}.png to {filepath}')
+        cv2.imwrite(filepath, img)
 
 
 def get_object_detector():
