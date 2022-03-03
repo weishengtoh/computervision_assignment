@@ -1,0 +1,16 @@
+main:
+  project_name: RP_NVIDIA_AIITP_CV_ASSIGNMENT
+  verbose: False                                     # True for debugging
+
+parameters:
+  input_path: data/input/toycars.mp4                # Path to import the video
+  output_path: data/output/toycars.mp4              # Path to export the video
+  images_folder: data/images                          # Folder to save the vehicle images
+  nms_max_overlap: 0.7                              # Maximum nonmax suppression threshold
+  min_detection_height: 1                           # Minimum bounding box height accepted
+  max_cosine_distance: 0.2                          # Threshold for cosine distance
+  nn_budget: None                                   # Maximum size of appearance descriptors
+  model_filename: deep_sort/model/mars-small128.pb  # Path to the model used to generate features
+  labels:                                           # List to select which classes to detect
+    - car
+    - truck
