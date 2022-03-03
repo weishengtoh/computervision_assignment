@@ -1,6 +1,7 @@
 # Vehicle Counting with DeepSort and YOLOv5
 
 The objective of this project is to `detect` and `track` the number of vehicles in a predefined video file `toycars.mp4`.  
+
 The output file should include a counter of the number of vehicles in each frame, as well as a running count of the number of vehicles seen so far.  
 
 For the assignment requirement, the video file used will be the first 15 secs of [Different types of vehicles Moving on On the roof](https://www.youtube.com/watch?v=ucEG-uM5v_0)
