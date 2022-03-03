@@ -8,9 +8,7 @@ For the assignment requirement, the video file used will be the first 15 secs of
 
 ![Different types of vehicles Moving on On the roof](data/gifs/original.gif)
 
-To implement the `detection` part of the problem, we will be using [YOLOv5](https://github.com/ultralytics/yolov5).  
-
-The `tracking` portion will be implemented using the [DeepSORT](https://github.com/nwojke/deep_sort)  algorithm.  
+The `detection` part of the problem will be implemented using [YOLOv5](https://github.com/ultralytics/yolov5), and the `tracking` portion will be implemented using the [DeepSORT](https://github.com/nwojke/deep_sort) algorithm.  
 
 To save the *best image* of each vehicle detected, a measure of the euclidean distance from the bounding box center to the frame center point is also implemented. The idea is that the best image to save should be located closest to the frame center.  
 
